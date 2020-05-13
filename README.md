@@ -1,1 +1,1 @@
-# suspend
+# Suspend plugin for qbot
