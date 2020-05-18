@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     if(!args[0]) {
         return message.channel.send("Please provide a user to suspend!");
     }
-    let groupid = client.config.groupid;
+    let groupid = client.config.groupId;
     let username = args[0];
     let id;
     try {
