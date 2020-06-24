@@ -1,11 +1,12 @@
 const roblox = require('noblox.js');
+require('dotenv').config();
 const suspendedRank = 1; // CHANGE THIS TO THE SUSPENDED RANK ID
 
 exports.run = async (client, message, args) => {
     if(!args[0]) {
         return message.channel.send("Please provide a user to suspend!");
     }
-    let groupid = client.config.groupId;
+    let groupid = process.env.groupId;
     let username = args[0];
     let id;
     try {
